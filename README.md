@@ -368,7 +368,7 @@ Ce projet est la propriété du Master G2C.
 Pour toute question concernant le projet :
 - **Master G2C** : [Site officiel](https://www.iae.unicaen.fr/formations-fiche.php?id_diplome=159)
 - **GitHub** : [Repository du projet](https://github.com/cabraham2/g2c-site-internet)
-- **LinkedIn** : [Clément ABRAHAM](www.linkedin.com/in/clément-abraham-530566164)
+- **LinkedIn** : [Clément ABRAHAM](https://www.linkedin.com/in/clément-abraham-530566164)
 
 ---
 
