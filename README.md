@@ -91,7 +91,7 @@ Ce projet représente une étape importante vers l'autonomie numérique et la mo
 
 1. **Cloner le projet**
 ```bash
-git clone https://github.com/votre-nom/g2c-site-internet.git
+git clone https://github.com/cabraham2/g2c-site-internet.git
 cd g2c-site-internet
 ```
 
@@ -357,7 +357,7 @@ Cela ferait de G2C une **plateforme de test et d'apprentissage collaborative** q
 
 ## 👥 Équipe
 
-Projet développé dans le cadre du Master 2 G2C - Promotion 2024-2025
+Projet développé dans le cadre du Master 2 G2C - Promotion 2025-2026
 
 ## 📝 License
 
@@ -366,8 +366,9 @@ Ce projet est la propriété du Master G2C.
 ## 📞 Contact
 
 Pour toute question concernant le projet :
-- **Master G2C** : [Site officiel](https://www.master-g2c.fr)
-- **GitHub** : [Repository du projet](https://github.com/votre-nom/g2c-site-internet)
+- **Master G2C** : [Site officiel](https://www.iae.unicaen.fr/formations-fiche.php?id_diplome=159)
+- **GitHub** : [Repository du projet](https://github.com/cabraham2/g2c-site-internet)
+- **LinkedIn** : [Clément ABRAHAM](www.linkedin.com/in/clément-abraham-530566164)
 
 ---
 
