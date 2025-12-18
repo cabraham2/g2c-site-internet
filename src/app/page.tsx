@@ -1,103 +1,205 @@
-import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { 
+  GraduationCap, 
+  Users, 
+  Briefcase, 
+  TrendingUp, 
+  Award,
+  MapPin,
+  Calendar,
+  BookOpen
+} from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      {/* Hero Section */}
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center">
+            <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
+              Master <span className="text-blue-600">G2C</span>
+            </h1>
+            <p className="text-xl sm:text-2xl text-gray-700 mb-4">
+              Gestion et Commerce
+            </p>
+            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+              IAE de Caen - Formation d'excellence en management et commerce international
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild>
+                <Link href="/login">
+                  Accéder à l'intranet
+                </Link>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <Link href="#presentation">
+                  En savoir plus
+                </Link>
+              </Button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Présentation Section */}
+      <section id="presentation" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Le Master G2C
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Une formation de haut niveau qui prépare les futurs managers aux défis 
+              du commerce international et de la gestion d'entreprise.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <GraduationCap className="w-12 h-12 text-blue-600 mb-4" />
+                <CardTitle>Formation d'Excellence</CardTitle>
+                <CardDescription>
+                  Un cursus rigoureux combinant théorie et pratique professionnelle
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Users className="w-12 h-12 text-green-600 mb-4" />
+                <CardTitle>Réseau Alumni</CardTitle>
+                <CardDescription>
+                  Un réseau de diplômés actif dans les plus grandes entreprises
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Briefcase className="w-12 h-12 text-purple-600 mb-4" />
+                <CardTitle>Insertion Professionnelle</CardTitle>
+                <CardDescription>
+                  95% d'insertion professionnelle dans les 6 mois suivant le diplôme
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Spécialisations Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Nos Spécialisations
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <TrendingUp className="w-8 h-8 text-blue-600 mb-2" />
+                <CardTitle>Commerce International</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Négociation internationale</li>
+                  <li>• Marketing global</li>
+                  <li>• Logistique internationale</li>
+                  <li>• Droit du commerce international</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <Award className="w-8 h-8 text-green-600 mb-2" />
+                <CardTitle>Management & Gestion</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Gestion financière</li>
+                  <li>• Management d'équipe</li>
+                  <li>• Stratégie d'entreprise</li>
+                  <li>• Innovation & Entrepreneuriat</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Infos Pratiques */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Informations Pratiques
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Localisation</h3>
+              <p className="text-gray-600">
+                IAE de Caen<br />
+                3 Rue Claude Bloch<br />
+                14000 Caen, France
+              </p>
+            </div>
+
+            <div className="text-center">
+              <Calendar className="w-12 h-12 text-green-600 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Durée</h3>
+              <p className="text-gray-600">
+                2 ans (4 semestres)<br />
+                Formation en alternance possible<br />
+                Stage de 6 mois en entreprise
+              </p>
+            </div>
+
+            <div className="text-center">
+              <BookOpen className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Admission</h3>
+              <p className="text-gray-600">
+                Bac+3 validé<br />
+                Dossier + Entretien<br />
+                Score TOEIC requis
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-blue-600 text-white">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-4">
+            Rejoignez notre communauté
+          </h2>
+          <p className="text-xl mb-8">
+            Étudiants, Alumni, Professeurs - Connectez-vous sur notre plateforme
+          </p>
+          <div className="space-x-4">
+            <Button size="lg" variant="secondary" asChild>
+              <Link href="/register">
+                S'inscrire
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/alumni">
+                Réseau Alumni
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
